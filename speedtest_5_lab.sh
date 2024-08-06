@@ -1,4 +1,5 @@
 #!/bin/bash
+echo "$(date) | Running Script By $USER@$HOSTNAME" >> speedtest_5.log
 speedtest-cli  --csv-header > speedtest_5.csv
 for SERVER_ID in $(speedtest-cli --list | grep -o -E "[0-9]{1,5})" | grep -o "[0-9]*")
 do
