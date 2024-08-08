@@ -52,7 +52,7 @@ run_speedtest() {
     printf "Average Upload Speed: %.2f Mbps\n" $avg_upload_speed
 }
 
-# รันการทดสอบความเร็ว
+# รันการทดสอบความเร็วทุก 1 นาที
 while true; do
     run_speedtest
     sleep 60
